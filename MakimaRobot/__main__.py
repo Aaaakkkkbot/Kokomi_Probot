@@ -686,9 +686,9 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendAnimation(
+            dispatcher.bot.send_photo(
                 f"@{SUPPORT_CHAT}",
-                animation="https://telegra.ph/file/7da3271cfe386f5e75d42.jpg",
+                Photo="https://telegra.ph/file/7da3271cfe386f5e75d42.jpg",
                 caption=f"""
 ㅤ♦️ {BOT_NAME} ɪs ᴀʟɪᴠᴇ ʙᴀʙʏ...
 
