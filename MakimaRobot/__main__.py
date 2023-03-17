@@ -87,25 +87,24 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 *ʜᴇʏ* {}, *ᴍʏ ɴᴀᴍᴇ ɪs* {}! ㅤ
-ɪ ᴀᴍ ᴀ ᴅᴇᴠɪʟ ʜᴜɴᴛᴇʀ ғʀᴏᴍ ᴄʜᴀɪɴsᴀᴡ ᴍᴀɴ.
 ɪ ᴀᴍ  ᴀ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ,ʙᴜɪʟᴛ ғᴏʀ ᴡᴇᴇʙs.
-ɪ ᴀᴍ sᴘᴇᴄɪᴀʟɪᴢᴇᴅ ɪɴ ᴍᴀɴᴀɢɪɴɢ ɢʀᴏᴜᴘs ᴏғ ᴀɴɪᴍᴇ ᴄᴏᴍᴍᴜɴɪᴛɪᴇs[❃](https://telegra.ph/file/2e306bd8e0a4e7066ad4b.jpg)!
+ɪ ᴀᴍ sᴘᴇᴄɪᴀʟɪᴢᴇᴅ ɪɴ ᴍᴀɴᴀɢɪɴɢ ɢʀᴏᴜᴘs ᴏғ ᴀɴɪᴍᴇ ᴄᴏᴍᴍᴜɴɪᴛɪᴇs[❃](https://telegra.ph/file/af869b35bff1572876d98.mp4)!
 """
 
 buttons2 = [
     [
         InlineKeyboardButton(
-            text="Start me🤖",
+            text="Start me",
             url=f"https://t.me/{BOT_USERNAME}",
         ),
         InlineKeyboardButton(
-            text="Commands and help💡",
+            text="Commands and help",
             url=f"http://t.me/{BOT_USERNAME}?start=help",
         ),
     ],
     [
         InlineKeyboardButton(
-            text="Bot support🚑", url=f"https://t.me/{SUPPORT_CHAT}"
+            text="Bot support", url=f"https://t.me/{SUPPORT_CHAT}"
         ),
     ],
 ]
@@ -114,31 +113,31 @@ buttons2 = [
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕ 𝘼𝙙𝙙 𝙈𝘼𝙆𝙄𝙈𝘼 𝙏𝙤 𝙈𝙖𝙣𝙖𝙜𝙚 𝙔𝙤𝙪𝙧 𝙂𝙧𝙤𝙪𝙥 ➕",
+            text="➕ Add Erika To Your Group ➕",
             url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
         ),
     ],
     [
         InlineKeyboardButton(
-            text="🛠️𝙐𝙥𝙙𝙖𝙩𝙚𝙨 𝘾𝙝𝙖𝙣𝙣𝙚𝙡", url=f"https://t.me/kakashi_bots_updates"
+            text="Updates", url=f"https://t.me/Chizuru_Update"
         ),
-        InlineKeyboardButton(text="💬𝙎𝙪𝙥𝙥𝙤𝙧𝙩 𝙂𝙧𝙤𝙪𝙥", url=f"https://t.me/{SUPPORT_CHAT}"),
+        InlineKeyboardButton(text="Support", url=f"https://t.me/{SUPPORT_CHAT}"),
     ],
     [
         InlineKeyboardButton(
             text="Vc music 🎧", url=f"https://t.me/{BOT_USERNAME}?start=vhelp"
         ),
-        InlineKeyboardButton(text="🌐𝙊𝙪𝙧 𝙉𝙚𝙩𝙬𝙤𝙧𝙠", url=f"https://t.me/Otaku_Binge"),
+        InlineKeyboardButton(text="Our Network ", url=f"https://t.me/QuanticXNetwork"),
     ],
     [
-        InlineKeyboardButton(text="💡𝙃𝙚𝙡𝙥 𝙖𝙣𝙙 𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨", callback_data="help_back"),
+        InlineKeyboardButton(text="Help & Cmds", callback_data="help_back"),
     ],
 ]
 
 
 HELP_STRINGS = f"""
 *ʜᴇʏ ᴛʜᴇʀᴇ! ᴍʏ ɴᴀᴍᴇ ɪs {BOT_NAME}.*
-ɪ'ᴍ ᴀ ᴘᴀʀᴛ ᴏғ ᴏᴛᴀᴋᴜ • ʙɪɴɢᴇ
+ɪ'ᴍ ᴀ ᴘᴀʀᴛ ᴏғ ᴏ̨ᴜᴀɴᴛɪᴄ ɴᴇᴛᴡᴏʀᴋ
 ʜᴀᴠᴇ ᴀ ʟᴏᴏᴋ ᴀᴛ ᴛʜᴇ ғᴏʟʟᴏᴡɪɴɢ ғᴏʀ ᴀɴ ɪᴅᴇᴀ ᴏғ sᴏᴍᴇ ᴏғ ᴛʜᴇ ᴛʜɪɴɢs ɪ ᴄᴀɴ ʜᴇʟᴘ ʏᴏᴜ ᴡɪᴛʜ
 
 ᴍᴀɪɴ ᴄᴏᴍᴍᴀɴᴅs ᴀᴠᴀɪʟᴀʙʟᴇ: 
@@ -689,7 +688,7 @@ def main():
         try:
             dispatcher.bot.sendAnimation(
                 f"@{SUPPORT_CHAT}",
-                animation="https://telegra.ph/file/4f7104f92b2b58356e49a.jpg",
+                animation="https://telegra.ph/file/7da3271cfe386f5e75d42.jpg",
                 caption=f"""
 ㅤ♦️ {BOT_NAME} ɪs ᴀʟɪᴠᴇ ʙᴀʙʏ...
 
