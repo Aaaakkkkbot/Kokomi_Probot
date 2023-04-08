@@ -1,7 +1,7 @@
 # ɪғ ʏᴏᴜ ғᴏᴜɴᴅ ɪɴ ᴀɴʏ ᴇʀʀᴏʀs ᴛʜᴀɴ ᴘʟᴢ ᴄᴏɴᴛᴀᴄᴛ @SIXTH_H0KAGE
-# sᴜᴘᴘᴏʀᴛ :- @kakashi_bots_support
-# ᴜᴘᴅᴀᴛᴇs :- @kakashi_bots_updates
-# ɴᴇᴛᴡᴏʀᴋ :- @Otaku_Binge
+# sᴜᴘᴘᴏʀᴛ :- @Secret_Division
+# ᴜᴘᴅᴀᴛᴇs :- @Secret_Division
+# ɴᴇᴛᴡᴏʀᴋ :- @Secret_Division
 
 import importlib
 import re
@@ -686,12 +686,12 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.send_photo(
+            dispatcher.bot.send_Photo(
                 f"@{SUPPORT_CHAT}",
                 Photo="https://telegra.ph/file/7da3271cfe386f5e75d42.jpg",
                 caption=f"""
 ㅤ♦️ {BOT_NAME} ɪs ᴀʟɪᴠᴇ ʙᴀʙʏ...
-
+          Haruki 
 ┍──━──━──┙◆┕──━──━──┑
 ㅤ❂ **ᴘʏᴛʜᴏɴ :** `{y()}`
 ㅤ❂ **ʟɪʙʀᴀʀʏ :** `{telever}`
